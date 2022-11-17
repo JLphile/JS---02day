@@ -1,6 +1,6 @@
 
 
-# js基础第二天测试题
+# JavaScript基础day02测试题
 
 ## 1. if...else语句的if和else两个句子里的代码能同时被执行吗?
 
