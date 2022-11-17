@@ -4,7 +4,7 @@
 
 ## 1. if...else语句的if和else两个句子里的代码能同时被执行吗?
 
-A： 不可以，因为两个条件不同
+**A： 不可以，因为两个条件不同**
 B： 有时候可以，有时候不可以
 C： 2个都不能执行
 D： 可以，因为条件是并列的
@@ -28,25 +28,54 @@ D： 可以，因为条件是并列的
 ```
 
 A： 3
-B： 2 3
+**B： 2 3**
 C： 1 2 3
 D： 2
 
 ## 3. 结束当前循环,继续进行下一次循环的关键词是()
 
 A： break
-B： continue
+**B： continue**
 C： end
 D： return
 
 ## 4. 以下哪些情况可能会出现死循环() 【多选题】
 
-A： while(1){}
-B： while(true){}
+**A： while(1){}**
+**B： while(true){}**
 C： while(0){}
-D： while("itcast"){}
+**D： while("itcast"){}**
 
 ## 5. 以下while循环的次数是()
+
+```html
+<script>
+  let i=0
+  while (i===1){
+    i++
+  }
+</script>
+```
+
+A： 无限次
+
+B： 有语法错 不能执行
+
+**C： 一次也不执行**
+
+D： 执行一次
+
+## 6.下列哪个运算符需要同时对 值 与 类型 来比较是否相等？
+
+A： =
+
+B： ==
+
+**C： ===**
+
+D： !=
+
+## 7. 请问代码运算结果是？
 
 ```html
 <script>     
@@ -60,7 +89,7 @@ D： while("itcast"){}
 A:    22 hello 33 55
 B： 11 hello 33 55
 C： 22 false 33 0
-D： 22 false 33 55
+**D： 22 false 33 55**
 
 ## 8. 请根据运算符的优先级给下面的运算符做个排序？
 
@@ -70,29 +99,30 @@ c一元运算符 ++
 d算数运算符 +
 A： abcd
 B： dcab
-C： cdba
+**C： cdba**
 D： cbda
 
 ## 9. 运算结果正确的是？
 
-- ```html
-  <script>      
-    console.log(1 > 2)
-    console.log(2 >= 2)
-    console.log(2 <= 2)
-    console.log(2 == '2')
-    console.log(2 !== '2')
-  </script>
-  ```
+```html
+<script>      
+  console.log(1 > 2)
+  console.log(2 >= 2)
+  console.log(2 <= 2)
+  console.log(2 == '2')
+  console.log(2 !== '2')
+  console.log(2 != '2')  
+</script>
+```
 
 A： false true true true false
 B： false true true false false
-C： false true true true true
+**C： false true true true true false**
 D： false false false true false
 
 ## 10. 用break语句可以使流程跳出switch语句体，也可以用break语句在循环结构终止本层循环体，从而提前结束本层循环
 
-- 对
+- ***对***
 - 错
 
   
@@ -100,7 +130,7 @@ D： false false false true false
 ## 11. continue 不会打断当次循环执行。
 
 - 对
-- 错
+- **错**
 
   
 
