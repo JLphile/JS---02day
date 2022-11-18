@@ -81,13 +81,27 @@
           }
         }
       }
-      console.log(ageArr)
+      // console.log(ageArr)
       ageArr.sort()
-      console.log(ageArr)
+      let adultArr = []
+      for (let i = 0; i < ageArr.length; i++) {
+        if (ageArr[i] >= 18) {
+          adultArr.push(ageArr[i])
+        }
+      }
+      if (adultArr.length === 0) {
+        document.write(`这5个人都是未成年人<br>`)
+      } else {
+        document.write(`成人的年龄为${adultArr}岁<br>`)
+      }
       let ave = sum / ageArr.length
       let min = ageArr[0]
       let max = ageArr[ageArr.length - 1]
-      console.log(sum, ave, min, max)
+      // console.log(sum, ave, min, max)
+      document.write(`5人的年龄总和为${sum}岁<br>`)
+      document.write(`5人的年龄平均值为${ave}岁<br>`)
+      document.write(`5人中的最小年龄为${min}岁<br>`)
+      document.write(`5人中的最大年龄为${max}岁<br>`)
     </script>
   </body>
 </html>
