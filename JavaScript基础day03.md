@@ -23,7 +23,7 @@
 - A、true
 - B、false
 - C、null
-- D、undefine
+- D、undefined
 
 #### 4.下面关于for循环说法正确的是（D）
 
