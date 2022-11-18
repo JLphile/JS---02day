@@ -60,7 +60,7 @@
       // console.log(newArr)
       // ----------------------------------
       /*
-      让用户输入5个有效的年龄（0-100之间），放入数组中
+      让用户输入5个有效的年龄[1-100]之间，放入数组中
         必须输入5个有效年龄，如果无效，则不能放入数组中
       打印出所有成年人的年龄（数组筛选）
       打印所有人总年龄（累加）
@@ -72,7 +72,7 @@
       // for (let i = 1; i <= 5; i++) {
       //   let age = +prompt(`请输入第${i}个年龄(0-100之间)`)
       //   while (true) {
-      //     if (age >= 0 && age <= 100) {
+      //     if (age >= 1 && age <= 100) {
       //       ageArr.push(age)
       //       sum += age
       //       break
@@ -105,8 +105,8 @@
       //-----------方案二----------------
       let ageArr = []
       while (ageArr.length < 5) {
-        let age = +prompt(`请输入第${ageArr.length + 1}个人的年龄`)
-        if (age >= 0 && age <= 100) {
+        let age = +prompt(`请输入第${ageArr.length + 1}个人的有效年龄`)
+        if (age >= 1 && age <= 100) {
           ageArr.push(age)
         }
       }
