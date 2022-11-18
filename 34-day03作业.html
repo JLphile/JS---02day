@@ -67,41 +67,50 @@
       打印平均年龄
       打印最大年龄和最小年龄（最大值）
       */
+      // let ageArr = []
+      // let sum = 0
+      // for (let i = 1; i <= 5; i++) {
+      //   let age = +prompt(`请输入第${i}个年龄(0-100之间)`)
+      //   while (true) {
+      //     if (age >= 0 && age <= 100) {
+      //       ageArr.push(age)
+      //       sum += age
+      //       break
+      //     } else {
+      //       age = +prompt(`请输入第${i}个年龄(0-100之间)`)
+      //     }
+      //   }
+      // }
+      // // console.log(ageArr)
+      // ageArr.sort()
+      // let adultArr = []
+      // for (let i = 0; i < ageArr.length; i++) {
+      //   if (ageArr[i] >= 18) {
+      //     adultArr.push(ageArr[i])
+      //   }
+      // }
+      // if (adultArr.length === 0) {
+      //   document.write(`这5个人都是未成年人<br>`)
+      // } else {
+      //   document.write(`成人的年龄为${adultArr}岁<br>`)
+      // }
+      // let ave = sum / ageArr.length
+      // let min = ageArr[0]
+      // let max = ageArr[ageArr.length - 1]
+      // // console.log(sum, ave, min, max)
+      // document.write(`5人的年龄总和为${sum}岁<br>`)
+      // document.write(`5人的年龄平均值为${ave}岁<br>`)
+      // document.write(`5人中的最小年龄为${min}岁<br>`)
+      // document.write(`5人中的最大年龄为${max}岁<br>`)
+      //-----------方案二----------------
       let ageArr = []
-      let sum = 0
-      for (let i = 1; i <= 5; i++) {
-        let age = +prompt(`请输入第${i}个年龄(0-100之间)`)
-        while (true) {
-          if (age >= 0 && age <= 100) {
-            ageArr.push(age)
-            sum += age
-            break
-          } else {
-            age = +prompt(`请输入第${i}个年龄(0-100之间)`)
-          }
+      while (ageArr.length < 5) {
+        let age = +prompt(`请输入第${ageArr.length + 1}个人的年龄`)
+        if (age >= 0 && age <= 100) {
+          ageArr.push(age)
         }
       }
-      // console.log(ageArr)
-      ageArr.sort()
-      let adultArr = []
-      for (let i = 0; i < ageArr.length; i++) {
-        if (ageArr[i] >= 18) {
-          adultArr.push(ageArr[i])
-        }
-      }
-      if (adultArr.length === 0) {
-        document.write(`这5个人都是未成年人<br>`)
-      } else {
-        document.write(`成人的年龄为${adultArr}岁<br>`)
-      }
-      let ave = sum / ageArr.length
-      let min = ageArr[0]
-      let max = ageArr[ageArr.length - 1]
-      // console.log(sum, ave, min, max)
-      document.write(`5人的年龄总和为${sum}岁<br>`)
-      document.write(`5人的年龄平均值为${ave}岁<br>`)
-      document.write(`5人中的最小年龄为${min}岁<br>`)
-      document.write(`5人中的最大年龄为${max}岁<br>`)
+      console.log(ageArr)
     </script>
   </body>
 </html>
